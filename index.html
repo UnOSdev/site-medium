@@ -3,238 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <title>Not Real Medium</title>
-    <style>
-        a.nav-link.active.mx-1{
-            font-size: 18px;
-            
-        }
-        .heading{
-            max-width: 390px;
-            font-size: 70px;
-        }
-        .georgia{
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-        h6{
-            font-size: 12px;
-        }
-        p{
-            letter-spacing: 0.01px;
-            word-spacing: -2px;
-        }
-        .min-spacing{
-            word-spacing: -2px;
-            letter-spacing: -0.5px;
-        }
-        .small{
-            font-size: 13px;
-        }
-    </style>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+    <title>Document</title>
 </head>
 <body>
-    <nav class="bg-warning  border-bottom border-dark fixed-top">
+    <div class="navbar-light bg-dark fixed-top " >
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-                <a class="navbar-brand georgia" href="index.html"> <h2> <strong>Not Real Medium</strong></h2></a>
+            <nav class="navbar navbar-expand-lg text-light navbar-dark bg-dark">
+              <svg style="font-size: 30px;" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-egg" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 15a5 5 0 0 0 5-5c0-1.956-.69-4.286-1.742-6.12-.524-.913-1.112-1.658-1.704-2.164C8.956 1.206 8.428 1 8 1c-.428 0-.956.206-1.554.716-.592.506-1.18 1.251-1.704 2.164C3.69 5.714 3 8.044 3 10a5 5 0 0 0 5 5zm0 1a6 6 0 0 0 6-6c0-4.314-3-10-6-10S2 5.686 2 10a6 6 0 0 0 6 6z"/>
+              </svg>
+                <a class="navbar-brand">Ubayda Turizm</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav ml-auto">
-                    <a class="nav-link active mx-1" href="story.html">Our Story</a>
-                    <a class="nav-link active mx-1" onclick="alert('Not working:D')" href="#">Membership</a>
-                    <a class="nav-link active mx-1" onclick="alert('Not working:D')" href="#">Write</a>
-                    <a class="nav-link active mx-1" onclick="alert('Not working:D')" href="#">Sign in</a>
-                    <a class="btn bg-dark text-light px-3 pt-2 mx-1" onclick="alert('Not working:D')" href="#">Pricing</a>
+                  <div class="navbar-nav">
+                    <a class="nav-link active" href="index.html">Main Page <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="istanbul.html">Go to istanbul!</a>
+                    <a class="nav-link" href="#" onclick="alert('Sorry but its currently disabled\nTry againg later\nThanks!')" aria-disabled="true">Tickets</a>
                   </div>
                 </div>
               </nav>
         </div>
-    </nav>
-    <div class="pt-3"></div>
-    <div class="bg-warning pt-2 border-bottom border-dark mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-8 col-lg-5">
-                    <h1 class="heading georgia">Explore new perspectives</h1>
-                    <p class="lead mt-3">Read and share ideas from independent voices, world-class publications, and experts from around the globe. Everyone's welcome. Learn more.</p>
-                    <a class="btn btn-outline-dark mb-5">Get Started</a>
-                </div>
-                <div class=" col-sm d-none d-lg-block">
-                    <div style="max-width: 380px;height: 100px;" class="mx-auto">
-                        <img class="img-fluid" src="img/head-photo.png" alt="">
-                    </div>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide pt-5" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner bg-dark text-light" >
+          <div style="height: 800px;background-image: url('img/carousel/1.webp');background-size: 100% 100%;" class="carousel-item">
+          </div>
+          <div style="height: 800px;" class="carousel-item">
+            <img src="img/carousel/2.jpg" class="w-100 h-100" alt="...">
+          </div>
+          <div style="height: 800px;" class="carousel-item">
+            <img src="img/carousel/3.jpeg" class="w-100 h-100" alt="...">
+          </div>
+          <div style="height: 800px;background-image: url('img/carousel/6.jpg');background-size: 100% 100%;" class="carousel-item active">
+            <div class="row h-100" >
+                <div class="col-xs-6 col-sm-8 mx-auto mt-5">
+                    <h1>Welcome to Istanbul</h1>
+                    <p class="lead mt-5" >Istanbul, is the most populous city in Turkey and the country's economic, cultural and historic center. Istanbul is a transcontinental city in Eurasia, straddling the Bosporus strait (which separates Europe and Asia) between the Sea of Marmara and the Black Sea.</p>
+                    <p class="lead mt-5"> Its commercial and historical center lies on the European side and about a third of its population lives in suburbs on the Asian side of the Bosporus.</p>
+                    <a target="_blank" href="https://en.wikipedia.org/wiki/Istanbul" class="btn btn-primary mt-3" >
+                        <h4>
+                            Read more
+                        </h4>
+                    </a>
                 </div>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="container mt-5">
-        <svg class="float-left mr-3" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-graph-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5z"/>
-        </svg>
-        <p><strong>TRENDING ON MEDIUM</strong></p>
-    </div>
-    <div class="border-bottom border-black-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mt-4 mt-sm-4 mt-md-0 ">
-                    <div class="row">
-                        <div class="col-1 mr-3 text-black-50">
-                            <h2><strong>01</strong></h2>
-                        </div>
-                        <div class="col pr-3 mt-2" >
-                            <h6 > <strong>Jean-Louis Gassée</strong> in <strong>Monday Note</strong></h6>
-                            <p><strong>PC Life After Apple Silicon</strong></p>
-                            <h6 class="text-muted" >Nov 22 . 5 min read</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4 mt-sm-4 mt-md-0 ">
-                    <div class="row">
-                        <div class="col-1 mr-3 text-black-50">
-                            <h2><strong>02</strong></h2>
-                        </div>
-                        <div class="col pr-3 mt-2" >
-                            <h6 > <strong>Michal Malewicz</strong> in <strong>UX Collective</strong></h6>
-                            <p><strong>Glassmorphism in user interface</strong></p>
-                            <h6 class="text-muted" >Nov 21 . 5 min read</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4 mt-sm-4 mt-md-0 ">
-                    <div class="row">
-                        <div class="col-1 mr-3 text-black-50">
-                            <h2><strong>03</strong></h2>
-                        </div>
-                        <div class="col pr-3 mt-2" >
-                            <h6 ><strong>Hunter Walk</strong></h6>
-                            <p><strong>Why a Paid Newsletter Won't Be Enough Money for Most Writers...</strong></p>
-                            <h6 class="text-muted" >Nov 23 . 5 min read</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="row">
-                        <div class="col-1 mr-3 text-black-50">
-                            <h2><strong>04</strong></h2>
-                        </div>
-                        <div class="col pr-3 mt-2" >
-                            <h6 > <strong>Sophia Martin</strong> in <strong>Flutter Community</strong></h6>
-                            <p><strong>Creating Flutter Application Integrated With Artifical Intelligence</strong></p>
-                            <h6 class="text-muted" >Nov 22 . 5 min read</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="row">
-                        <div class="col-1 mr-3 text-black-50">
-                            <h2><strong>05</strong></h2>
-                        </div>
-                        <div class="col pr-3 mt-2" >
-                            <h6 > <strong>Jean-Louis Gassée</strong> in <strong>Monday Note</strong></h6>
-                            <p><strong>PC Life After Apple Silicon</strong></p>
-                            <h6 class="text-muted mt-4" >Nov 21 . 5 min read</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4 mb-5">
-                    <div class="row">
-                        <div class="col-1 mr-3 text-black-50">
-                            <h2><strong>06</strong></h2>
-                        </div>
-                        <div class="col pr-3 mt-2" >
-                            <h6 > <strong>Jean-Louis Gassée</strong> in <strong>Monday Note</strong></h6>
-                            <p><strong>PC Life After Apple Silicon</strong></p>
-                            <h6 class="text-muted" >Nov 24 . 5 min read</h6>
-                        </div>
-                    </div>
-                </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="jumbotron">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-3 mx-auto text-center border"></div>
+              </div>
             </div>
+            <div id="fatih" class="col-md col-xs">
+              <div class="card mb-4 shadow-sm">
+                <img class="img-fluid" src="img/cards/1.jpg" alt="">
+                <div class="card-body">
+                  <h3>Fatih Mosque</h3>
+                  <p class="card-text mt-3">The Fatih Mosque, is an Ottoman mosque in the Fatih district of Istanbul, Turkey. The original mosque on the site was constructed between 1463 and 1470 on the site of the Church of the Holy Apostles.</p>
+                  <p class="card-text" >After the Fall of Constantinople to the Ottoman Empire in 1453, it was converted to a mosque by Mehmed the Conqueror</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <a href="https://en.wikipedia.org/wiki/Fatih_Mosque,_Istanbul" target="_blank" class="btn btn-primary" >Read More...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <div class="card shadow-sm">
+                <img src="img/cards/2.jpg" class="img-fluid" alt="">
+                <div class="card-body">
+                  <h3>Hagia Sophia Mosque</h3>
+                  <p class="card-text mt-3">Hagia Sophia Mosque, Built in 537 as the patriarchal cathedral of the imperial capital of Constantinople, it was the largest Christian church of the eastern Roman Empire (the Byzantine Empire) and the Eastern Orthodox Church, except during the Latin Empire from 1204 to 1261, when it became the city's Roman Catholic cathedral.</p>
+                  <p class="card-text">In 1453, after the Fall of Constantinople to the Ottoman Empire, it was converted into a mosque. In 1935 the secular Turkish Republic established it as a museum. In 2020, it re-opened as a mosque.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <a href="https://en.wikipedia.org/wiki/Hagia_Sophia" target="_blank" class="btn btn-primary" >Read More...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-xs-12 ml-5 mb-5 ml-md-0 mb-md-0 d-xs-block d-md-none">
-                <p><strong>DISCOVER MORE OF WHAT MATTERS TO YOU</strong></p>
-                <div class="row px-5 mb-1">
-                    <div class="col-5 p-0 mb-2"><a class="btn btn-outline-dark small">Data Science</a></div>
-                    <div class="col p-0 mr-2 mb-2"><a class="btn btn-outline-dark small">Relationships</a></div>
-                    <div class="col p-0"><a class="btn btn-outline-dark small">Self</a></div>
-                </div>
-                <div class="row px-5 mb-1"> 
-                    <div class="col p-0 mr-2 mb-2"><a class="btn btn-outline-dark small">Programming</a></div>
-                    <div class="col p-0 mb-2"><a class="btn btn-outline-dark small">Productivity</a></div>
-                    <div class="col-3 p-0"><a class="btn btn-outline-dark small">Javascript</a></div>
-                </div>
-                <div class="row px-5 mb-1">
-                    <div class="col-6 p-0 mr-n1 mb-2"><a class="btn btn-outline-dark small">Machine Learning</a></div>
-                    <div class="col-3 p-0 mr-2 mb-2"><a class="btn btn-outline-dark small">Politics</a></div>
-                    <div class="col p-0"><a class="btn btn-outline-dark small">Health</a></div>
-                </div>
+      </div>
+      <div class="bg-dark text-light">
+        <footer class="container py-5">
+          <div class="row border-top border-light pt-4">
+            <div class="col-12 col-md">
+              <svg class="mb-3" style="font-size: 36px;" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-egg" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 15a5 5 0 0 0 5-5c0-1.956-.69-4.286-1.742-6.12-.524-.913-1.112-1.658-1.704-2.164C8.956 1.206 8.428 1 8 1c-.428 0-.956.206-1.554.716-.592.506-1.18 1.251-1.704 2.164C3.69 5.714 3 8.044 3 10a5 5 0 0 0 5 5zm0 1a6 6 0 0 0 6-6c0-4.314-3-10-6-10S2 5.686 2 10a6 6 0 0 0 6 6z"/>
+              </svg>
+              <small class="d-block mb-3 text-muted" title="Vay be ne kadar eski bir site..." >© 2020-2020</small>
             </div>
-            <div class="col-md-8 col-sm-12">
-                <div class="row">
-                    <div class="col-12 mb-5">
-                        <div class="row">
-                            <div class="col-8">
-                                <h6><strong>Nicolas Cole</strong> in <strong>Better Advice</strong></h6>
-                                <h4 class="min-spacing" ><strong>20 Things Most People Learn Too Late In Life</strong></h4>
-                                <p class="text-black-50" >Life is a journey of twists and turns, peaks and valleys, mountains to climb and oceans to explore.</p>
-                            </div>
-                            <div class="col-4">
-                                <img src="https://miro.medium.com/fit/c/200/133/1*BO36vszZiTsOZl0EU6lwLA.jpeg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 mb-5">
-                        <div class="row mb-4">
-                            <div class="col-8">
-                                <h6><strong>Brian Pennie</strong> in <strong>Mind Cafe</strong></h6>
-                                <h4 class="min-spacing" ><strong>Six Powerful Quotes That Slapped Me Square in the Face</strong></h4>
-                                <p class="text-black-50" >If you need a push right now, I’m hoping they will motivate you too.</p>
-                            </div>
-                            <div class="col-4">
-                                <img src="https://miro.medium.com/fit/c/200/133/1*zlAecOQjiOXOV0fkXEvVhQ.jpeg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="row mb-4">
-                            <div class="col-8">
-                                <h6><strong>Tim Denning</strong> in <strong>The Ascent</strong></h6>
-                                <h4 class="min-spacing" ><strong>Warren Buffett’s Recent Explanation of How Money Now Works Is the Most Important in...</strong></h4>
-                                <p class="text-black-50" >The value of the money you have is changing. “Debt “and what it means is fundamentally changing.</p>
-                            </div>
-                            <div class="col-4">
-                                <img src="https://miro.medium.com/fit/c/200/133/1*yTB0AML2PhCGh6iK5eDgbg.jpeg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-6 col-md">
+              <h5>Resources</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Ubayda Turzim</a></li>
+                <li><a class="text-muted" href="#">About us</a></li>
+                <li><a class="text-muted" href="#">Terms</a></li>
+                <li><a class="text-muted" href="#">History</a></li>
+              </ul>
             </div>
-            <div class="col-md-12 col-lg col-sm d-none d-md-block">
-                <p><strong>DISCOVER MORE OF WHAT MATTERS TO YOU</strong></p>
-                <div class="row px-5 mb-1">
-                    <div class="col-xl-5 col-lg-6 mr-lg-1 mb-lg-2 col-md-3 mr-md-n4 p-xl-0 mr-xl-n2 mb-xl-2"><a class="btn btn-outline-dark small">Data Science</a></div>
-                    <div class="col-xl-3 col-lg-4 col-md-2 mr-md-0 p-0 mr-2 mr-xl-5 mb-xl-2"><a class="btn btn-outline-dark small">Relationships</a></div>
-                    <div class="col-xl col-lg-12 ml-lg-5 ml-xl-0 mb-2 col-md-2 px-lg-5 px-xl-0"><a class="btn btn-outline-dark small">Self</a></div>
-                </div>
-                <div class="row px-5 mb-1"> 
-                    <div class="col-xl-4 col-lg-4 mr-lg-5 mb-lg-2 col-md-2 mr-md-3 p-xl-0 mr-xl-3 mb-xl-2"><a class="btn btn-outline-dark small">Programming</a></div>
-                    <div class="col-xl col-lg-4 col-md-2 mr-md-1 p-xl-0 mb-xl-2"><a class="btn btn-outline-dark small">Productivity</a></div>
-                    <div class="col-xl-3 col-md ml-lg-4 m-xl-0 mb-2 px-lg-5 p-xl-0"><a class="btn btn-outline-dark small">Javascript</a></div>
-                </div>
-                <div class="row px-5 mb-1">
-                    <div class="col-xl-6 col-lg-4 mb-lg-2 mr-lg-4 col-md-4 mr-md-n5 p-xl-0 mr-xl-n1 mb-xl-2"><a class="btn btn-outline-dark small">Machine Learning</a></div>
-                    <div class="col-xl-3 col-lg-4 col-md-2 p-xl-0 mr-xl-2 mb-xl-2"><a class="btn btn-outline-dark small">Politics</a></div>
-                    <div class="col-xl col-lg-12 col-md ml-lg-5 px-lg-5 p-xl-0 ml-xl-0 p-0"><a class="btn btn-outline-dark small">Health</a></div>
-                </div>
+            <div class="col-6 col-md">
+              <h5>About</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="istanbul.html">Buy a ticket</a></li>
+                <li><a class="text-muted" href="#">Locations</a></li>
+                <li><a class="text-muted" href="#">Privacy</a></li>
+                <li><a class="text-muted" href="#">Guarantee</a></li>
+              </ul>
             </div>
-        </div>
-    </div>
-    <script src="bootstrap/js/jquery-3.5.1.slim.min.js" ></script>
-    <script src="bootstrap/js/bootstrap.min.js" ></script>
+          </div>
+        </footer>
+      </div>
+
+    <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
-</html> 
+</html>
